@@ -12,7 +12,7 @@ body {
       monospace;
   }
 .top-nav {
-    background-color: #6E9A99;
+    background-color: white;
     display: flex;
     flex-direction: row;
     height: 5rem;
@@ -42,12 +42,13 @@ body {
     border-bottom-right-radius: 3px;
     border: none;
     color: rgba(0, 0, 0, 0.588);
+    background-color: #14C5E1;
 }
 .search-form {
     width: 80%;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
-    border: none;
+    border: 1px solid black;
 }
 .logo-area {
     font-size: 2.5rem;

@@ -4,7 +4,7 @@ const Navbar = () => {
     return (
         <div className="top-nav">
             <div className="nav-left">
-                <div className="logo-area">Tick<span style={{color:"red"}}>et</span>er</div>
+                <div className="logo-area">Tick<span style={{color:"#14C5E1"}}>et</span>er</div>
 
             </div>
             <form className="top-nav-area">
