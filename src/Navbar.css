@@ -17,6 +17,8 @@ body {
     flex-direction: row;
     height: 5rem;
     align-items: center;
+    position: fixed;
+    width: 100%;
 }
 .nav-left {
     display: flex;
@@ -43,6 +45,10 @@ body {
     border: none;
     color: rgba(0, 0, 0, 0.588);
     background-color: #14C5E1;
+}
+.top-nav-area button:hover{
+    background-color: #14c6e15d;
+    transition-duration: 400ms;
 }
 .search-form {
     width: 80%;

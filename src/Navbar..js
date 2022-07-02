@@ -13,9 +13,9 @@ const Navbar = () => {
             </form>
             <div className="nav-right">
             <a href="/">create Event</a>
-            <a href="/">about</a>
-            <a href="/">contact us</a>
-            <a href="/">help</a>
+            <a href="#aboutus">about</a>
+            <a href="#contactus">contact us</a>
+            <a href="#howto">help</a>
             </div>
         </div>
     );

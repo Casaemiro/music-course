@@ -7,7 +7,8 @@
 .howto-section-header {
     font-size: 3rem;
     margin-bottom: 3%;
-    font-weight: 400;
+    font-weight: 800;
+    color: black;
 }
 .howto-steps {
     text-align: left;

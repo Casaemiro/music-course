@@ -1,7 +1,7 @@
 import './Contactus.css'
 const Contactus = () => {
     return ( 
-        <div className="contact-section">
+        <div className="contact-section" id="contactus">
             <div className="contact-header">
                 Contact Us
             </div>

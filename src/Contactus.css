@@ -1,12 +1,14 @@
 .contact-header {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     font-weight: 800;
-    background-color: rgba(0, 0, 0, 0.359);
+    /* background-color: rgba(0, 0, 0, 0.195); */
     padding-top: 2%;
     padding-bottom: 2%;
     text-align: left;
     padding-left: 10%;
     margin-top: 10%;
+    border-top: 1px solid rgba(0, 0, 0, 0.411);
+    color: white;
 }
 .contact-text{
     display: flex;
@@ -16,4 +18,8 @@
     padding: 2%;
     margin: 5% auto;
     border-radius: 3px;
+}
+.contact-section {
+    background-color: rgba(0, 0, 0, 0.601);
+    padding-bottom: 5%;
 }
