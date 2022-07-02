@@ -1,0 +1,20 @@
+.howto-section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3%;
+    padding-bottom: 6%;
+}
+.howto-section-header {
+    font-size: 3rem;
+    margin-bottom: 3%;
+    font-weight: 800;
+    color: black;
+}
+.howto-steps {
+    text-align: left;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.57);
+    margin-top: 1%;
+}

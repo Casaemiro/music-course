@@ -1,27 +1,19 @@
-// import Navbar from './Navbar'; // iinclude header file here
-// import Home from './Home';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import React from "react";
+import About from './About';
+import './App.css';
+import Contactus from './Contactus';
+import Hero from './hero';
+import Howto from './Howto';
+import Navbar from './Navbar.';
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        {/* <Navbar />  // include navabar here */}
-        <div className="content">
-          <Switch>
-
-            <Route exact path="/">
-             {/* main page */}
-            </Route>
-           
-            <Route path='*'>
-              {/* include 404 page here */}
-            </Route>
-          </Switch>
-        </div>
-      </div>
-    </Router>
+    <div className="App">
+     <Navbar />
+     <Hero />
+     <Howto />
+     <About />
+     <Contactus />
+    </div>
   );
 }
 

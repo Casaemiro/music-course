@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+.top-nav {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    height: 5rem;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+.nav-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* background-color: red; */
+    width: 15%;
+}
+.top-nav-area {
+    display: flex;
+    flex-direction: row;
+    margin-left: 1%;
+    /* background-color: blue; */
+    width: 35%;
+}
+.top-nav-area button{
+    padding-left: 3%;
+    padding-right: 3%;
+    height: auto;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border: none;
+    color: rgba(0, 0, 0, 0.588);
+    background-color: #14C5E1;
+}
+.top-nav-area button:hover{
+    background-color: #14c6e15d;
+    transition-duration: 400ms;
+}
+.search-form {
+    width: 80%;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border: 1px solid black;
+}
+.logo-area {
+    font-size: 2.5rem;
+    padding-left: 15%;
+    padding-right: 2%;
+    font-weight: bold;
+}
+input {
+    height: 2rem;
+}
+button {
+    height: 2rem;
+}
+.nav-right {
+    margin-left: auto;
+    width: 30%;
+}
+.nav-right a {
+    padding-right: 4%;
+    text-decoration: none;
+    color: black;
+}
+.nav-right a:hover {
+    padding-right: 4%;
+    text-decoration: underline;
+    color: black;
+}
