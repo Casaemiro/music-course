@@ -1,4 +1,3 @@
-// import Navbar from './Navbar'; // iinclude header file here
 // import Home from './Home';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import React from "react";
