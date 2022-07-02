@@ -1,0 +1,31 @@
+.hero-section {
+    text-align: left;
+    background-color: green;
+    height:60vh;
+    padding: 7%;
+    background-image: url('https://media.istockphoto.com/photos/movie-theater-ticketing-counter-with-social-distancing-box-line-on-picture-id1322787555?b=1&k=20&m=1322787555&s=170667a&w=0&h=x04EotTV132cYS_w_GYA5YxZIRokSP2q7dTHrJhPsGA=');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.large-hero-text {
+    font-size: 4.7rem;
+    font-weight: 1000;
+}
+.hero-2 {
+    font-size: 1.6rem;
+}
+.button-section{
+  margin-top: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  font-weight: bold;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+.btn2 {
+    padding-left: 1%;
+    padding-top: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+}
