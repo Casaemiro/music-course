@@ -1,8 +1,7 @@
 .hero-section {
     text-align: left;
     background-color: green;
-    height:65vh;
-    padding: 7%;
+    
     background-image: url('https://media.istockphoto.com/photos/movie-theater-ticketing-counter-with-social-distancing-box-line-on-picture-id1322787555?b=1&k=20&m=1322787555&s=170667a&w=0&h=x04EotTV132cYS_w_GYA5YxZIRokSP2q7dTHrJhPsGA=');
     background-position: center;
     background-repeat: no-repeat;
@@ -10,27 +9,40 @@
     background-attachment: fixed;
     /* margin-top: 3%; */
 }
+.colorgame:hover {
+    color:#14C5E1;
+}
+.overl {
+    background-color: rgba(0, 0, 0, 0.475);
+    padding: 7%;
+    height:67vh;
+}
 .large-hero-text {
     font-size: 4.7rem;
     font-weight: 1000;
     color: white;
     margin-top: 3%;
+    line-height: 100%;
+    margin-bottom: 2%;
 }
 .hero-2 {
     font-size: 1.6rem;
     color:rgba(0, 0, 0, 0.748);
+    margin-bottom: 2%;
 }
 .button-section{
     margin-top: 1%;
     padding-left: 2%;
     padding-right: 2%;
     font-weight: bold;
-    border-radius: 15px;
+    border-radius: 20px;
     background-color: #14C5E1;
-    border: 1px solid black;
+    border: 1px solid #14C5E1;
+    height: 40px;
   }.button-section:hover{
-    background-color: transparent;
-    border: 1px solid black;
+    background-color: #14c6e15d;
+    transition-duration: 400ms;
+    border: 1px solid rgba(0, 0, 0, 0.305);
     transition-duration: 300ms;
   }
 .btn2 {

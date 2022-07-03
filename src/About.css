@@ -9,6 +9,10 @@
     border: 1px solid rgba(0, 0, 0, 0.39);
     border-radius: 5px;
     margin-bottom: 5%;
+    padding-bottom: 0%;
+}
+.aboutus-section:hover {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.381);
 }
 .about-head {
     font-size: 2.5rem;
@@ -16,9 +20,13 @@
     color: rgba(0, 0, 0, 0.592);
 }
 .about-text {
-    padding: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
     text-align: left;
 }
 .about-text p {
     font-size: 1.4rem;
+}
+.about-image {
+    padding-bottom: 0px;
 }

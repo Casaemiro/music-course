@@ -11,6 +11,9 @@ body {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
   }
+  title {
+      color: red
+  }
 .top-nav {
     background-color: white;
     display: flex;
@@ -19,6 +22,7 @@ body {
     align-items: center;
     position: fixed;
     width: 100%;
+    box-shadow: 0px 0.3px 10px rgba(0, 0, 0, 0.327);
 }
 .nav-left {
     display: flex;
@@ -26,6 +30,7 @@ body {
     align-items: center;
     /* background-color: red; */
     width: 15%;
+    
 }
 .top-nav-area {
     display: flex;
@@ -34,10 +39,10 @@ body {
     /* background-color: blue; */
     width: 35%;
 }
-.top-nav-area button{
-    padding-left: 3%;
-    padding-right: 3%;
-    height: auto;
+.search-button{
+    padding-left: 1%;
+    padding-right: 1%;
+    height: 35px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
     border-top-right-radius: 3px;
@@ -46,12 +51,12 @@ body {
     color: rgba(0, 0, 0, 0.588);
     background-color: #14C5E1;
 }
-.top-nav-area button:hover{
+.search-button:hover{
     background-color: #14c6e15d;
     transition-duration: 400ms;
 }
 .search-form {
-    width: 80%;
+    width: 100%;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
     border: 1px solid black;
