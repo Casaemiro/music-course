@@ -3,13 +3,13 @@ import { useState } from 'react';
 import Started from './MusicCourseModules/Started';
 import Introduction from './MusicCourseModules/Introduction';
 import CommonlyUsedTerms from './MusicCourseModules/CommonlyUsedTerms';
-import ClassificationOfMusicalInstruments from './MusicCourseModules/ClassificationOfMusicalIntruments';
+import ClassificationOfMusicalInstruments from './MusicCourseModules/category';
 import MusicalAphabet from './MusicCourseModules/MusicalAlphabet';
 import ThePiano from './MusicCourseModules/ThePiano';
 
 const Course = () => {
     const [topp,setTop] = useState("Getting Started")
-    const [temp,setTemp] = useState("")
+    const [temp,setTemp] = useState(".strt-section")
     const displayModule = (val) => {
         if (temp !== ""){
         document.querySelector(temp).style.display="none"
@@ -24,7 +24,7 @@ const Course = () => {
                 <div className="course-module" onClick={(e)=>{setTop("Getting Started");displayModule(".strt-section");}}>Getting started</div>
                 <div className="course-module" onClick={()=>{setTop("Introduction");displayModule(".introduction-section")}}>Introduction</div>
                 <div className="course-module" onClick={()=>{setTop("Commonly used terms");displayModule(".commonlyUsed")}}>Commonly used terms</div>
-                <div className="course-module" onClick={()=>{setTop("Classification of musical instruments");displayModule(".Classification-section")}}>Classification of musical instruments</div>
+                <div className="course-module" onClick={()=>{setTop("Classification of musical instruments");displayModule(".category")}}>Classification of musical instruments</div>
                 <div className="course-module" onClick={()=>{setTop("The musical alphabet");displayModule('.musical-alphabet')}}>The musical alphabet</div>
                 <div className="course-module" onClick={()=>{setTop("The piano");displayModule('.the-piano')}}>The piano</div>
                 <div className="course-module" onClick={()=>{setTop("Naming of white keys")}}>Naming of white keys</div>
@@ -41,7 +41,7 @@ const Course = () => {
                 <div className='testing'></div>
             </div>
             <div className="course-material">
-            <div className="topic-section">{topp}</div>
+            <div className="topic-section"><span className='tab-section'>tab</span>{topp}</div>
             <Started />
             <Introduction />
             <CommonlyUsedTerms />

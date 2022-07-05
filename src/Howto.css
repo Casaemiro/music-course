@@ -1,15 +1,17 @@
 .howto-section {
     display: flex;
     flex-direction: column;
-    padding-top: 3%;
-    padding-bottom: 6%;
+    padding-top: 10%;
+    padding-bottom: 20%;
 }
 .howto-section-header {
     font-size: 3rem;
-    margin-bottom: 3%;
+    padding-bottom: 5%;
     font-weight: 800;
     color: rgba(0, 0, 0, 0.482);
     text-align: center;
+    width: 80%;
+    margin: 0% auto;
 }
 .howto-steps {
     text-align: left;
@@ -18,4 +20,19 @@
     font-size: 1.5rem;
     color: rgba(0, 0, 0, 0.57);
     margin-top: 1%;
+}
+@media only screen and (max-width: 625px) {
+    .howto-section-header {
+        font-size: 2rem;
+        width: 80%;
+        margin: 0% auto;
+        margin-bottom: 5%;
+    }
+    .howto-steps {
+        font-size: 0.9rem;
+        width: 60%;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin: 0% auto;
+    }
 }

@@ -31,6 +31,16 @@
     padding: 5px;
     align-items: flex-start;
 }
+.tab-section {
+    display: none;
+    margin-right: 5%;
+    background-color: rgba(0, 128, 0, 0.268);
+    padding-left: 1%;
+    padding-right: 1%;
+    border-radius: 5px;
+}.tab-section:hover {
+    background-color: rgba(255, 255, 255, 0.548);
+}
 .topic-section {
     background-color: rgba(0, 128, 0, 0.145);
     width: 98%;
@@ -41,4 +51,32 @@
     font-weight: 800;
     color: rgba(0, 18, 0, 0.803);
    
+}
+
+@media only screen and (max-width: 851px) {
+    .course-outline {
+        display: none;
+    }
+    .tab-section {
+        display: flex;
+        margin-right: 5%;
+        background-color: rgba(0, 128, 0, 0.268);
+        padding-left: 1%;
+        padding-right: 1%;
+        border-radius: 5px;
+        width: 97%;
+    }.tab-section:hover {
+        background-color: rgba(255, 255, 255, 0.548);
+    }
+    .topic-section {
+        width: 99%;
+        padding-right: 0%;
+    }
+    .course-material {
+        width: 100%;
+    }
+}@media only screen and (max-width: 424px) {
+    .course-section {
+        font-size: 0.8rem;
+    }
 }
