@@ -16,8 +16,8 @@
     width: 280px;
 }
 .course-module {
+    border-left: 1px solid transparent;
     padding: 5px;
-    
     width: 280px;
 }.course-module:hover {
     background-color: rgba(255, 255, 255, 0.327); 

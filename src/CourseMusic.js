@@ -1,7 +1,11 @@
 import './CourseMusic.css'
 import { useState } from 'react';
-import Started from './Started';
-import Introduction from './Introduction';
+import Started from './MusicCourseModules/Started';
+import Introduction from './MusicCourseModules/Introduction';
+import CommonlyUsedTerms from './MusicCourseModules/CommonlyUsedTerms';
+import ClassificationOfMusicalInstruments from './MusicCourseModules/ClassificationOfMusicalIntruments';
+import MusicalAphabet from './MusicCourseModules/MusicalAlphabet';
+import ThePiano from './MusicCourseModules/ThePiano';
 
 const Course = () => {
     const [topp,setTop] = useState("Getting Started")
@@ -19,10 +23,10 @@ const Course = () => {
             <div className="course-outline">
                 <div className="course-module" onClick={(e)=>{setTop("Getting Started");displayModule(".strt-section");}}>Getting started</div>
                 <div className="course-module" onClick={()=>{setTop("Introduction");displayModule(".introduction-section")}}>Introduction</div>
-                <div className="course-module" onClick={()=>{setTop("Commonly used terms")}}>Commonly used terms</div>
-                <div className="course-module" onClick={()=>{setTop("Classification of musical instruments")}}>Classification of musical instruments</div>
-                <div className="course-module" onClick={()=>{setTop("The musical alphabet")}}>The musical alphabet</div>
-                <div className="course-module" onClick={()=>{setTop("The piano")}}>The piano</div>
+                <div className="course-module" onClick={()=>{setTop("Commonly used terms");displayModule(".commonlyUsed")}}>Commonly used terms</div>
+                <div className="course-module" onClick={()=>{setTop("Classification of musical instruments");displayModule(".Classification-section")}}>Classification of musical instruments</div>
+                <div className="course-module" onClick={()=>{setTop("The musical alphabet");displayModule('.musical-alphabet')}}>The musical alphabet</div>
+                <div className="course-module" onClick={()=>{setTop("The piano");displayModule('.the-piano')}}>The piano</div>
                 <div className="course-module" onClick={()=>{setTop("Naming of white keys")}}>Naming of white keys</div>
                 <div className="course-module" onClick={()=>{setTop("Naming of black keys")}}>Naming of black keys</div>
                 <div className="course-module" onClick={()=>{setTop("Scales")}}>Scales</div>
@@ -40,6 +44,10 @@ const Course = () => {
             <div className="topic-section">{topp}</div>
             <Started />
             <Introduction />
+            <CommonlyUsedTerms />
+            <ClassificationOfMusicalInstruments />
+            <MusicalAphabet />
+            <ThePiano />
             </div>
         </div>
     );

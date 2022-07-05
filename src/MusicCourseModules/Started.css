@@ -13,3 +13,8 @@
 .strt-section {
     display: none;
 }
+@media only screen and (max-width: 980px) {
+   .intro-img {
+       width: 96%;
+   }
+}

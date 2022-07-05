@@ -75,7 +75,8 @@ button {
 }
 .nav-right {
     margin-left: auto;
-    width: 30%;
+    width:400px;
+    /* background-color: brown; */
 }
 .nav-right a {
     padding-right: 4%;
@@ -86,4 +87,14 @@ button {
     padding-right: 4%;
     text-decoration: underline;
     color: black;
+}
+@media only screen and (max-width: 1330px) {
+    
+}
+@media only screen and (max-width: 980px) {
+    .nav-right {
+        text-align: center;
+        font-size: 0.8rem;
+
+    }
 }
