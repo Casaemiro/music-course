@@ -80,3 +80,10 @@
         font-size: 0.8rem;
     }
 }
+.extra-link {
+    color: rgba(0, 0, 0, 0.67);
+    font-weight: 700;
+}
+.extra-link:hover {
+    text-decoration: underline;
+}

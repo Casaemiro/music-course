@@ -98,11 +98,27 @@ button {
 
     }
 }@media only screen and (max-width: 588px) {
-    .top-nav-area {
+    /* .top-nav-area {
         display: none;
 
     }
     .search-button {
         display: none;
+    } */
+   
+}
+@media only screen and (max-width:524px) {
+    .nav-right {
+        position: absolute;
+        margin-top: 110px;
+        color: white;
+        margin-left: -50px;
+    }
+    .nav-right a {
+        color: white;
+    }.nav-right a:Hover {
+        color: white;
+    } .top-nav-area {
+        margin-left: 20%;
     }
 }
