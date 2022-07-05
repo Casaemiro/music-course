@@ -7,7 +7,7 @@ const About = () => {
         <>
             <div className="aboutus-section" id="aboutus">
 
-                <img src={aboutimg1} alt="" style={{ borderTopLeftRadius: "3px", borderBottomLeftRadius: "3px", height: "320px", marginBottom: "0px" }} className="about-image" />
+                <img src={aboutimg1} alt="" style={{ borderTopLeftRadius: "3px", borderBottomLeftRadius: "3px", marginBottom: "0px" }} className="about-image" />
 
                 <div className="about-text">
                     <div className="about-head">
@@ -20,15 +20,15 @@ const About = () => {
             </div>
             <div className="aboutus-section">
 
-                <div className="about-text" style={{ textAlign: "right" }}>
+                <div className="about-text seco" style={{ textAlign: "right" }}>
                     <div className="about-head">
                         How we Operate
                     </div>
                     <p>
-                        For the past 5 years, we have been running a 3 months intensive onsite training once every year after which there is a graduation and certification event. We also added this online platform to enable our students have access to the right learning material and also  provide a way for us to work effeciently with our students out of town
+                        For the past 5 years, we have been running a yearly 3 months intensive onsite training after which there is a graduation. We also added this online platform to enable us to work effeciently with our students out of town.
                     </p>
                 </div>
-                <img src={aboutimg2} alt="" style={{ borderTopRightRadius: "3px", borderBottomRightRadius: "3px", height: "320px", marginBottom: "0px" }} className="about-image" />
+                <img src={aboutimg2} alt="" style={{ borderTopRightRadius: "3px", borderBottomRightRadius: "3px", marginBottom: "0px" }} className="about-image sec" />
             </div></>
     );
 }

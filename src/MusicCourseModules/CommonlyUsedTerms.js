@@ -1,3 +1,5 @@
+import './CommonlyUsedTerms.css'
+
 const CommonlyUsedTerms = () => {
     return ( 
         <div className="commonlyUsed">

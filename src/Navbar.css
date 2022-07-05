@@ -97,4 +97,12 @@ button {
         font-size: 0.8rem;
 
     }
+}@media only screen and (max-width: 588px) {
+    .top-nav-area {
+        display: none;
+
+    }
+    .search-button {
+        display: none;
+    }
 }

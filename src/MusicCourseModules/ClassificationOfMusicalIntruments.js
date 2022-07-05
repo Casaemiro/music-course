@@ -1,3 +1,5 @@
+import './ClassificationOfMusicalIntruments'
+
 const ClassificationOfMusicalInstruments = () => {
     return (
         <div className="Classification-section">

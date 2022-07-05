@@ -1,3 +1,4 @@
+import './MusicalAlphabet.css'
 const MusicalAphabet = () => {
     return ( 
         <div className="musical-alphabet">

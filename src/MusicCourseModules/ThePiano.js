@@ -1,3 +1,4 @@
+import './ThePiano.css'
 const ThePiano = () => {
     return ( 
         <div className="the-piano">

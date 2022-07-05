@@ -16,6 +16,7 @@
     background-color: rgba(10, 50, 0, 0.574);
     padding: 7%;
     height:67vh;
+  
 }
 .large-hero-text {
     font-size: 4.7rem;
@@ -24,6 +25,7 @@
     margin-top: 3%;
     line-height: 85px;
     margin-bottom: 2%;
+    text-align: left;
 }
 .hero-2 {
     font-size: 1.6rem;
@@ -55,8 +57,30 @@
 @media only screen and (max-width: 980px) {
     .large-hero-text {
         font-size: 3.6rem;
+        text-align: left;
     }
     .hero-2 {
         font-size: 1.3rem;
+    }
+}
+@media only screen and (max-width: 756px) {
+    .large-hero-text {
+        font-size: 2.4rem;
+        text-align: center;
+        line-height: 50px;
+        margin-top: 10%;
+    }
+    .hero-2 {
+        text-align: center;
+        font-size: 0.8rem;
+    }
+    .button-section {
+        margin: 0% auto;
+    }
+    .overl {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
     }
 }
