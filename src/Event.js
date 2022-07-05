@@ -4,10 +4,10 @@ import './Event.css'
 const Event = () => {
     return ( 
         <div className="events">
-            <Card />
-            <Card />
-            <Card />
-            <Card />
+            <Card evtName={"Worship Exodus"}/>
+            <Card evtName={"Royal Flex"}/>
+            <Card evtName={"Thearther Night"}/>
+            <Card evtName={"The Experience"}/>
         </div>
      );
 }

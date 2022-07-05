@@ -48,11 +48,11 @@ body {
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
     border: none;
-    color: rgba(0, 0, 0, 0.588);
-    background-color: #14C5E1;
+    color: gold;
+    background-color: #022910e6;
 }
 .search-button:hover{
-    background-color: #14c6e15d;
+    background-color: #0229108e;
     transition-duration: 400ms;
 }
 .search-form {

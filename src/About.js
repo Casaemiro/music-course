@@ -1,42 +1,36 @@
 import './About.css'
+import aboutimg1 from './images/DSC_2185.JPG'
+import aboutimg2 from './images/DSC_2630.JPG'
 
 const About = () => {
-    return ( 
+    return (
         <>
-        <div className="aboutus-section" id="aboutus">
-            
-            <img src="https://media.istockphoto.com/photos/high-angle-view-close-up-asian-woman-using-mobile-app-cinema-movie-picture-id1324465035?b=1&k=20&m=1324465035&s=170667a&w=0&h=FsfpHKvaNR05oit_Q96jO-0biZzt5Hzq4GitrCTqzMg=" alt="" style={{borderTopLeftRadius:"3px",borderBottomLeftRadius:"3px", height:"50%",marginBottom:"0px"}} className="about-image"/>
-            
-            <div className="about-text">
-                <div className="about-head">
-                    About Us
+            <div className="aboutus-section" id="aboutus">
+
+                <img src={aboutimg1} alt="" style={{ borderTopLeftRadius: "3px", borderBottomLeftRadius: "3px", height: "320px", marginBottom: "0px" }} className="about-image" />
+
+                <div className="about-text">
+                    <div className="about-head">
+                        About Us
+                    </div>
+                    <p>
+                        Ewald music academy is an institution for effectively training musicians and sound engineers in the fields of music and thearther arts as a whole. By training musicians and technicians, we provide a solution to sustainable developement goals (poverty, unemployment). We are base in Buea
+                    </p>
                 </div>
-                <p>
-                Based in buea Cameroon, with clients amd team members all over the globe, we are all 
-about helping event organizers create, issue, track tickets and manage payments of their 
-events tickets. We also help individuals easily get tickets to their favorite events online 
-from the confort of their home.
-                </p>
             </div>
-        </div>
-        <div className="aboutus-section">
-            
-            <div className="about-text" style={{textAlign:"right"}}>
-                <div className="about-head">
-                    How we Operate
+            <div className="aboutus-section">
+
+                <div className="about-text" style={{ textAlign: "right" }}>
+                    <div className="about-head">
+                        How we Operate
+                    </div>
+                    <p>
+                        For the past 5 years, we have been running a 3 months intensive onsite training once every year after which there is a graduation and certification event. We also added this online platform to enable our students have access to the right learning material and also  provide a way for us to work effeciently with our students out of town
+                    </p>
                 </div>
-                <p>
-                With 3 years of experience in helping both event organizers create, issue, track tickets 
-and handle payments, as well as 
-help individuals easily get tickets to their favorite events, conferences, seminars, festivals,
-etc. 
-We’ve grown, build productive teams and made the most of the available resources to 
-better serve our clients.
-                </p>
-            </div>
-            <img src="https://media.istockphoto.com/photos/high-angle-view-close-up-asian-woman-using-mobile-app-cinema-movie-picture-id1324465035?b=1&k=20&m=1324465035&s=170667a&w=0&h=FsfpHKvaNR05oit_Q96jO-0biZzt5Hzq4GitrCTqzMg=" alt="" style={{borderTopRightRadius:"3px",borderBottomRightRadius:"3px", height:"50%",marginBottom:"0px"}} className="about-image"/>
-        </div></>
-     );
+                <img src={aboutimg2} alt="" style={{ borderTopRightRadius: "3px", borderBottomRightRadius: "3px", height: "320px", marginBottom: "0px" }} className="about-image" />
+            </div></>
+    );
 }
- 
+
 export default About;

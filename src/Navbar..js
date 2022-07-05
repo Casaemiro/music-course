@@ -1,4 +1,5 @@
 import './Navbar.css'
+import logo from './images/logo.png'
 
 const Navbar = () => {
     const displaySearch = () => {
@@ -11,17 +12,20 @@ const Navbar = () => {
     return (
         <div className="top-nav">
             <div className="nav-left">
-                <div className="logo-area"><a href="/" style={{textDecoration:"none",color:"black"}}>Tick<span style={{color:"#14C5E1"}}>et</span>er</a></div>
+                <div className="logo-area">
+                    {/* <a href="/" style={{textDecoration:"none",color:"black"}}></a> */}
+                </div>
+                <img src={logo} alt="" style={{ width: "60px" }} />
             </div>
             <form className="top-nav-area">
-                <input name="search" type="text" placeholder="search event..." className="search-form" style={{paddingLeft:"2%", color:"#14C5E1"}}/>
-                
-            </form><button  onClick={displaySearch} onSubmit={displaySearch} className="search-button">SEARCH</button>
+                <input name="search" type="text" placeholder="search course..." className="search-form" style={{ paddingLeft: "2%", color: "#121B15" }} />
+
+            </form><button onClick={displaySearch} onSubmit={displaySearch} className="search-button">SEARCH</button>
             <div className="nav-right">
-            <a href="/">Create event</a>
-            <a href="#aboutus">About</a>
-            <a href="#contactus">Contact us</a>
-            <a href="#howto">Help</a>
+                <a href="/">Getting started</a>
+                <a href="#aboutus">About</a>
+                <a href="#contactus">Contact us</a>
+                <a href="#howto">Help</a>
             </div>
         </div>
     );
