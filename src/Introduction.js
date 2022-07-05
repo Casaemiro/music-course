@@ -3,7 +3,7 @@ import './Introduction.css'
 const Introduction = () => {
     return ( 
         <div className="introduction-section">
-            <p>Here's a list of different views on music</p>
+            <p className="intro-text">Music has been around for ages</p>
         </div>
      );
 }

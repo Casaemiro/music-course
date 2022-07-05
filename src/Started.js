@@ -6,7 +6,7 @@ const Started = () => {
             <div className='intro-img'>
                 <img src='' alt=""/>
             </div>
-            <p className="intro-text">Here are a few points that will help you make maximum use of this platform.</p>
+            <div className="intro-text">Here are a few points that will help you make maximum use of this platform.</div>
             
             <ul>
                 <li>Make sure you understand one lesson before going to the next.</li>
