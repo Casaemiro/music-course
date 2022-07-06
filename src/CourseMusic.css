@@ -7,6 +7,18 @@
     border: 1px solid rgba(0, 128, 0, 0.618);
     border-radius: 5px;
 }
+.mobl {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #DAEDDA;
+    /* border-right: 1px solid green; */
+    padding: 5px;
+    width: 280px;
+    font-size: 1rem; 
+    font-weight: 500;
+    position: absolute;
+    display: none;
+}
 .course-outline {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
