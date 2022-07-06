@@ -1,6 +1,6 @@
 const NamingBlackKeys = () => {
     return ( 
-        <div className="the-piano">
+        <div className="blackKeys">
         <p className="intro-text">this is for NamingBlackKeys.</p>
         <div className='intro-img'>
             <img src='' alt=""/>

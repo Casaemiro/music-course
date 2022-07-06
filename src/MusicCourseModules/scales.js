@@ -1,6 +1,6 @@
 const Scales = () => {
     return ( 
-        <div className="the-piano">
+        <div className="scales">
         <p className="intro-text">this is for scales</p>
         <div className='intro-img'>
             <img src='' alt=""/>

@@ -6,6 +6,9 @@ import CommonlyUsedTerms from './MusicCourseModules/CommonlyUsedTerms';
 import ClassificationOfMusicalInstruments from './MusicCourseModules/category';
 import MusicalAphabet from './MusicCourseModules/MusicalAlphabet';
 import ThePiano from './MusicCourseModules/ThePiano';
+import NamingWhiteKeys from './MusicCourseModules/namingWhiteKeys';
+import NamingBlackKeys from './MusicCourseModules/namingBlackKeys';
+import Scales from './MusicCourseModules/scales';
 
 const Course = () => {
     const [topp,setTop] = useState("Getting Started")
@@ -33,9 +36,9 @@ const Course = () => {
                 <div className="course-module" onClick={()=>{setTop("Classification of musical instruments");displayModule(".category")}}>Classification of musical instruments</div>
                 <div className="course-module" onClick={()=>{setTop("The musical alphabet");displayModule('.musical-alphabet')}}>The musical alphabet</div>
                 <div className="course-module" onClick={()=>{setTop("The piano");displayModule('.the-piano')}}>The piano</div>
-                <div className="course-module" onClick={()=>{setTop("Naming of white keys")}}>Naming of white keys</div>
-                <div className="course-module" onClick={()=>{setTop("Naming of black keys")}}>Naming of black keys</div>
-                <div className="course-module" onClick={()=>{setTop("Scales")}}>Scales</div>
+                <div className="course-module" onClick={()=>{setTop("Naming of white keys");displayModule('.whiteKeys')}}>Naming of white keys</div>
+                <div className="course-module" onClick={()=>{setTop("Naming of black keys");displayModule(".blackKeys")}}>Naming of black keys</div>
+                <div className="course-module" onClick={()=>{setTop("Scales");displayModule(".scales")}}>Scales</div>
                 <div className="course-module" onClick={()=>{setTop("Fingering Charts")}}>Fingering Charts</div>
                 <div className="course-module" onClick={()=>{setTop("The major scale")}}>The major scale</div>
                 <div className="course-module" onClick={()=>{setTop("Chords")}}>Chords</div>
@@ -76,6 +79,9 @@ const Course = () => {
             <ClassificationOfMusicalInstruments />
             <MusicalAphabet />
             <ThePiano />
+            <NamingWhiteKeys />
+            <NamingBlackKeys />
+            <Scales />
             </div>
         </div>
     );
