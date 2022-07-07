@@ -1,3 +1,4 @@
+import './majorScale.css'
 const MajorScale = () => {
     return ( 
         <div className="majorScale-section">

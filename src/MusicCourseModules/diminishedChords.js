@@ -1,6 +1,7 @@
+import './diminishedChords.css'
 const DiminishedChords = () => {
     return ( 
-        <div className="majorChords-section">
+        <div className="dimChords-section">
         <p className="intro-text">this is for dim chords.</p>
         <div className='intro-img'>
             <img src='' alt=""/>

@@ -1,3 +1,4 @@
+import './namingBlackKeys.css'
 const NamingBlackKeys = () => {
     return ( 
         <div className="blackKeys">

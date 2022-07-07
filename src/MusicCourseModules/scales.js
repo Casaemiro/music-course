@@ -1,3 +1,4 @@
+import './scales.css'
 const Scales = () => {
     return ( 
         <div className="scales">

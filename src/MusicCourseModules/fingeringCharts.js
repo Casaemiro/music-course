@@ -1,3 +1,4 @@
+import './fingeringCharts.css'
 const FingeringChart = () => {
     return ( 
         <div className="fingerChart">

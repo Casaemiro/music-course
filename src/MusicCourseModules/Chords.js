@@ -1,3 +1,4 @@
+import './Chords.css'
 const Chords
  = () => {
     return ( 

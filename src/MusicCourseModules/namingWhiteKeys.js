@@ -1,3 +1,4 @@
+import './namingWhiteKeys.css'
 const NamingWhiteKeys = () => {
     return ( 
         <div className="whiteKeys">

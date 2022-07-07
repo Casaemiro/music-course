@@ -1,3 +1,4 @@
+import './majorChords.css'
 const MajorChords = () => {
     return ( 
         <div className="majorChords-section">

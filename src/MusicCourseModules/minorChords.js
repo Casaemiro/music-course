@@ -1,6 +1,7 @@
+import './minorChords.css'
 const MinorChords = () => {
     return ( 
-        <div className="majorChords-section">
+        <div className="minorChords-section">
         <p className="intro-text">this is for minor chords.</p>
         <div className='intro-img'>
             <img src='' alt=""/>

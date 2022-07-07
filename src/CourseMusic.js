@@ -9,6 +9,14 @@ import ThePiano from './MusicCourseModules/ThePiano';
 import NamingWhiteKeys from './MusicCourseModules/namingWhiteKeys';
 import NamingBlackKeys from './MusicCourseModules/namingBlackKeys';
 import Scales from './MusicCourseModules/scales';
+import FingeringChart from './MusicCourseModules/fingeringCharts';
+import MajorScale from './MusicCourseModules/majorScale';
+import Chords from './MusicCourseModules/Chords';
+import MajorChords from './MusicCourseModules/majorChords';
+import MinorChords from './MusicCourseModules/minorChords';
+import DiminishedChords from './MusicCourseModules/diminishedChords';
+import ChordInversion from './MusicCourseModules/chordInversions';
+import DiatonicChords from './MusicCourseModules/diatonicChords';
 
 const Course = () => {
     const [topp,setTop] = useState("Getting Started")
@@ -39,13 +47,13 @@ const Course = () => {
                 <div className="course-module" onClick={()=>{setTop("Naming of white keys");displayModule('.whiteKeys')}}>Naming of white keys</div>
                 <div className="course-module" onClick={()=>{setTop("Naming of black keys");displayModule(".blackKeys")}}>Naming of black keys</div>
                 <div className="course-module" onClick={()=>{setTop("Scales");displayModule(".scales")}}>Scales</div>
-                <div className="course-module" onClick={()=>{setTop("Fingering Charts")}}>Fingering Charts</div>
-                <div className="course-module" onClick={()=>{setTop("The major scale")}}>The major scale</div>
-                <div className="course-module" onClick={()=>{setTop("Chords")}}>Chords</div>
-                <div className="course-module" onClick={()=>{setTop("Major chords")}}>Major chords</div>
-                <div className="course-module" onClick={()=>{setTop("Minor chords")}}>Minor chords</div>
-                <div className="course-module" onClick={()=>{setTop("Diminished chords")}}>Diminished chords</div>
-                <div className="course-module" onClick={()=>{setTop("Chord inversions")}}>Chord inversions</div>
+                <div className="course-module" onClick={()=>{setTop("Fingering Charts");displayModule('.fingerChart')}}>Fingering Charts</div>
+                <div className="course-module" onClick={()=>{setTop("The major scale");displayModule('.majorScale-section')}}>The major scale</div>
+                <div className="course-module" onClick={()=>{setTop("Chords");displayModule('.chords-section')}}>Chords</div>
+                <div className="course-module" onClick={()=>{setTop("Major chords");displayModule('.majorChords-section')}}>Major chords</div>
+                <div className="course-module" onClick={()=>{setTop("Minor chords");displayModule('.minorChords-section')}}>Minor chords</div>
+                <div className="course-module" onClick={()=>{setTop("Diminished chords");displayModule('.dimChords-section')}}>Diminished chords</div>
+                <div className="course-module" onClick={()=>{setTop("Chord inversions");displayModule('.diatonicChords-section')}}>Chord inversions</div>
                 <div className="course-module" onClick={()=>{setTop("Diatonic chord progression")}}>Diatonic chord progression</div>
                 <div className='testing'></div>
             </div>
@@ -82,6 +90,15 @@ const Course = () => {
             <NamingWhiteKeys />
             <NamingBlackKeys />
             <Scales />
+            <FingeringChart />
+            <MajorScale />
+            <Chords />
+            <MajorChords />
+            <MinorChords />
+            <DiminishedChords />
+            <ChordInversion/>
+            <DiatonicChords />
+
             </div>
         </div>
     );
