@@ -5,6 +5,7 @@ import About from "./About";
 import Contactus from "./Contactus";
 import Event from "./Event";
 import Course from "./CourseMusic";
+import Footer from "./Footer";
 function App() {
   return (
     <div className="App">
@@ -15,6 +16,7 @@ function App() {
      <Howto />
      <About />
      <Contactus />
+     <Footer />
     </div>
   );
 }

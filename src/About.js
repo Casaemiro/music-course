@@ -14,7 +14,7 @@ const About = () => {
                         About Us
                     </div>
                     <p>
-                        Ewald music academy is an institution for effectively training musicians and sound engineers in the fields of music and thearther arts as a whole. By training musicians and technicians, we provide a solution to sustainable developement goals (poverty, unemployment). We are base in Buea
+                        Ewald music academy is a branch of <b>Ewald</b> based in Buea that effectively trains musicians and sound engineers in the fields of music and thearther arts as a whole. By training musicians and technicians, we provide a solution to sustainable developement goals (poverty, unemployment).
                     </p>
                 </div>
             </div>

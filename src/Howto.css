@@ -23,7 +23,7 @@
 }
 @media only screen and (max-width: 625px) {
     .howto-section-header {
-        font-size: 2rem;
+        font-size: 1.6rem;
         width: 80%;
         margin: 0% auto;
         margin-bottom: 5%;
@@ -34,5 +34,10 @@
         padding-left: 10%;
         padding-right: 10%;
         margin: 0% auto;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .howto-steps {
+        font-size: 0.8rem;
     }
 }
