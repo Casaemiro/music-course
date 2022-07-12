@@ -1,23 +1,30 @@
-import Navbar from "./Navbar.";
-import Hero from "./hero";
-import Howto from "./Howto";
-import About from "./About";
-import Contactus from "./Contactus";
-import Event from "./Event";
-import Course from "./CourseMusic";
-import Footer from "./Footer";
+import Navbar from "./components/Navbar.";
+import About from "./components/About";
+import Course from "./components/CourseMusic";
+import Footer from "./components/Footer";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import HomePage from "./Pages/Home";
+
 function App() {
   return (
-    <div className="App">
-     <Navbar />
-     <Event />
-     <Hero />
-     <Course/>
-     <Howto />
-     <About />
-     <Contactus />
-     <Footer />
-    </div>
+    <Router>
+      <div className="App">
+
+        <Navbar />
+        <Switch>
+          <Route exact path="/">
+            <HomePage />
+          </Route>
+          <Route exact path="/about">
+            <About />
+          </Route>
+          <Route exact path="/course">
+            <Course />
+          </Route>
+        </Switch>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

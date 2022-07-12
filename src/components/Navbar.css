@@ -16,6 +16,11 @@ body {
     transition-duration: 500ms;
     
 }
+.mobileMenu a {
+    line-height: 1.5rem;
+    text-decoration: none;
+    color: rgb(1, 40, 1);
+}
 .lgo {
     width: 60px;
 }

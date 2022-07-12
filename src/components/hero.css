@@ -2,7 +2,7 @@
     text-align: left;
     /* background-color: green; */
     
-    background-image: url('./images/DSC_2415.JPG');
+    background-image: url('../images/DSC_2415.JPG');
     /* background-position: center; */
     background-repeat: no-repeat;
     background-size: cover;
@@ -37,7 +37,7 @@
     padding-left: 2%;
     padding-right: 2%;
     font-weight: bold;
-    border-radius: 20px;
+    border-radius: 5px;
     background-color: gold;
     border: 1px solid gold;
     height: 40px;
@@ -53,6 +53,9 @@
     padding-top: 1%;
     padding-right: 1%;
     padding-bottom: 1%;
+}
+.btn-sec {
+    width: 100%;
 }
 @media only screen and (max-width: 980px) {
     .large-hero-text {
@@ -82,6 +85,11 @@
         justify-content: center;
         display: flex;
         flex-direction: column;
+    }
+    .btn-sec {
+        display: flex;
+        width: auto;
+        /* background-color: green; */
     }
 }
 

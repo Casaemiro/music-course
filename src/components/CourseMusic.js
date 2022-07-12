@@ -1,30 +1,39 @@
 import './CourseMusic.css'
 import { useState } from 'react';
-import Started from './MusicCourseModules/Started';
-import Introduction from './MusicCourseModules/Introduction';
-import CommonlyUsedTerms from './MusicCourseModules/CommonlyUsedTerms';
-import ClassificationOfMusicalInstruments from './MusicCourseModules/category';
-import MusicalAphabet from './MusicCourseModules/MusicalAlphabet';
-import ThePiano from './MusicCourseModules/ThePiano';
-import NamingWhiteKeys from './MusicCourseModules/namingWhiteKeys';
-import NamingBlackKeys from './MusicCourseModules/namingBlackKeys';
-import Scales from './MusicCourseModules/scales';
-import FingeringChart from './MusicCourseModules/fingeringCharts';
-import MajorScale from './MusicCourseModules/majorScale';
-import Chords from './MusicCourseModules/Chords';
-import MajorChords from './MusicCourseModules/majorChords';
-import MinorChords from './MusicCourseModules/minorChords';
-import DiminishedChords from './MusicCourseModules/diminishedChords';
-import ChordInversion from './MusicCourseModules/chordInversions';
-import DiatonicChords from './MusicCourseModules/diatonicChords';
+import Started from '../MusicCourseModules/Started';
+import Introduction from '../MusicCourseModules/Introduction';
+import CommonlyUsedTerms from '../MusicCourseModules/CommonlyUsedTerms';
+import ClassificationOfMusicalInstruments from '../MusicCourseModules/category';
+import MusicalAphabet from '../MusicCourseModules/MusicalAlphabet';
+import ThePiano from '../MusicCourseModules/ThePiano';
+import NamingWhiteKeys from '../MusicCourseModules/namingWhiteKeys';
+import NamingBlackKeys from '../MusicCourseModules/namingBlackKeys';
+import Scales from '../MusicCourseModules/scales';
+import FingeringChart from '../MusicCourseModules/fingeringCharts';
+import MajorScale from '../MusicCourseModules/majorScale';
+import Chords from '../MusicCourseModules/Chords';
+import MajorChords from '../MusicCourseModules/majorChords';
+import MinorChords from '../MusicCourseModules/minorChords';
+import DiminishedChords from '../MusicCourseModules/diminishedChords';
+import ChordInversion from '../MusicCourseModules/chordInversions';
+import DiatonicChords from '../MusicCourseModules/diatonicChords';
+import React from 'react';
 
 const Course = () => {
+    const [menu,setMenu] = React.useState("true")
     const [topp,setTop] = useState("Getting Started")
     const [temp,setTemp] = useState(".strt-section")
 
 
-    const showTab = () => {
-        document.querySelector(".mobl").style.display="contents"
+    const showTab = (e) => {
+        if(menu){
+            document.querySelector(".mobl").style.display="contents";
+            setMenu(false)
+        }else {
+            document.querySelector(".mobl").style.display="none";
+            setMenu(true)
+        }
+       
     }
     const displayModule = (val) => {
         if (temp !== ""){

@@ -1,6 +1,6 @@
 import './About.css'
-import aboutimg1 from './images/DSC_2185.JPG'
-import aboutimg2 from './images/DSC_2630.JPG'
+import aboutimg1 from '../images/DSC_2185.JPG'
+import aboutimg2 from '../images/DSC_2630.JPG'
 
 const About = () => {
     return (
