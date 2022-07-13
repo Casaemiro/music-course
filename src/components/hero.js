@@ -1,4 +1,5 @@
 import './hero.css'
+import { Link } from 'react-router-dom';
 const Hero = () => {
     return (
         <div className="hero-section">
@@ -9,8 +10,8 @@ const Hero = () => {
                 <div className="hero-2"><i>Our lessons are as simple as posible for beginners,<br/>but also engaging for non beginners. We serve <br/>you with our 5 years of experience.</i>
                 </div>
                 <div className="btn-sec">
-                <button className="button-section" id="howto">Online Courses</button>
-                <button className="button-section" id="howto" style={{backgroundColor:"transparent", marginLeft:"1rem", color:"white"}}>Admission</button>
+                <Link to="/courselist"><button className="button-section" id="howto">Online Courses</button></Link>
+                <button className="button-section secbtn" id="howto" style={{backgroundColor:"transparent", marginLeft:"1rem", color:"white"}}>Admission</button>
                 </div>
             </div>
         </div>

@@ -70,20 +70,23 @@ title {
 .top-nav-area {
     display: flex;
     flex-direction: row;
-    margin-left: 5px;
+    margin-left: 2%;
     /* background-color: blue; */
-    width: 160px;
+    width: 25%;
 }
 
 .evt {
-    margin-right: 2%;
+    margin-right: 1%;
     height: 2rem;
+    border: none;
+    background-color: transparent;
+    padding-left: 2%;
 }
 
 .search-button {
     padding-left: 1%;
     padding-right: 1%;
-    height: 35px;
+    height: 36px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
     border-top-right-radius: 3px;
@@ -99,7 +102,7 @@ title {
 }
 
 .search-form {
-    width: 160px;
+    width: 100%;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
     border: 1px solid black;
@@ -123,7 +126,7 @@ button {
 
 .nav-right {
     margin-left: auto;
-    width: 650px;
+    width: 680px;
     /* background-color: brown; */
 }
 

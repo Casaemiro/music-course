@@ -1,6 +1,7 @@
 import './Navbar.css'
 import logo from '../images/logo.png'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     const [menu,setMenu] = React.useState("true")
@@ -26,7 +27,7 @@ const Navbar = () => {
             <div className="nav-right">
                 <a href="/"><i className="fa-solid fa-magnifying-glass newSearch" style={{paddingRight:"2%"}}></i></a>
                 <a href="/">Admissions</a>
-                <a href="/">Courses</a>
+                <Link to="/courselist">Courses</Link>
                 <a href="/">Sponsor</a>
                 <a href="/">Events</a>
 
@@ -40,12 +41,17 @@ const Navbar = () => {
                 </select> */}
                 <a href="#aboutus">About</a>
                 <a href="#contactus">Contact us</a>
-                <a href="#howto">Help</a>
+                <select className='evt'>
+                    <option>Social</option>
+                    <option>Facebook</option>
+                    <option>Instagram</option>
+                    <option>Youtube</option>
+                </select>
             </div>
             <div className='mobileMenu'>
             <a href="/" style={{ marginLeft:"1rem"}}><i className="fa-solid fa-magnifying-glass newSearch"></i></a>
                 <a href="#howto" onClick={()=>{document.querySelector('.mobileMenu').style.display="none";setMenu(true)}} style={{paddingLeft:"1rem"}}>Admissions</a>
-                <a href="#howto" onClick={()=>{document.querySelector('.mobileMenu').style.display="none";setMenu(true)}} style={{paddingLeft:"1rem"}}>Courses</a>
+                <Link to="/courselist" onClick={()=>{document.querySelector('.mobileMenu').style.display="none";setMenu(true)}} style={{paddingLeft:"1rem"}}>Courses</Link>
                 <a href="#howto" onClick={()=>{document.querySelector('.mobileMenu').style.display="none";setMenu(true)}} style={{paddingLeft:"1rem"}}>Sponsor</a>
 
                 {/* <select className='evt'>
@@ -60,7 +66,12 @@ const Navbar = () => {
                 <a href="/" onClick={()=>{document.querySelector('.mobileMenu').style.display="none";setMenu(true)}} style={{paddingLeft:"1rem"}}>Events</a>
                 <a href="#aboutus" onClick={()=>{document.querySelector('.mobileMenu').style.display="none";setMenu(true)}} style={{paddingLeft:"1rem"}}>About</a>
                 <a href="#contactus" onClick={()=>{document.querySelector('.mobileMenu').style.display="none";setMenu(true)}} style={{paddingLeft:"1rem"}}>Contact us</a>
-                <a href="#howto" onClick={()=>{document.querySelector('.mobileMenu').style.display="none";setMenu(true)}} style={{paddingLeft:"1rem"}}>Help</a>
+                <select className='evt'>
+                    <option onClick={()=>{document.querySelector('.mobileMenu').style.display="none";setMenu(true)}} style={{paddingLeft:"1rem"}}>Social</option>
+                    <option onClick={()=>{document.querySelector('.mobileMenu').style.display="none";setMenu(true)}} style={{paddingLeft:"1rem"}}>Facebook</option>
+                    <option onClick={()=>{document.querySelector('.mobileMenu').style.display="none";setMenu(true)}} style={{paddingLeft:"1rem"}}>Instagram</option>
+                    <option onClick={()=>{document.querySelector('.mobileMenu').style.display="none";setMenu(true)}} style={{paddingLeft:"1rem"}}>Youtube</option>
+                </select>
             </div>
             <div className='menuIcon' onClick={()=>{if(menu){document.querySelector('.mobileMenu').style.display="flex"; setMenu(false)};if(!menu){document.querySelector('.mobileMenu').style.display="none"; setMenu(true)};}}><i className="fa-solid fa-bars" ></i></div>
         </div>

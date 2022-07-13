@@ -46,6 +46,10 @@ const Course = () => {
         document.querySelector(".mobl").style.display="none"
     }
     return (
+        <>
+        <div style={{paddingTop:"7%", paddingLeft:"10%", fontSize:"3rem"}}>
+            <b>Basic Music Theory</b>
+        </div>
         <div className="course-section">
             <div className="course-outline">
                 <div className="course-module" onClick={(e)=>{setTop("Getting Started");displayModule(".strt-section")}}>Getting started</div>
@@ -111,6 +115,7 @@ const Course = () => {
 
             </div>
         </div>
+        </>
     );
 }
 
