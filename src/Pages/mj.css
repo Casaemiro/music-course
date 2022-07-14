@@ -1,3 +1,8 @@
 .morefunc:hover {
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.575);
 }
+.titl {
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgba(1, 57, 1, 0.382);
+}

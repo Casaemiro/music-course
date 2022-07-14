@@ -16,8 +16,11 @@ import { Link } from 'react-router-dom'
 import './mj.css'
 const CourseListPage = () => {
     return (
-        <div style={{ padding: "5%" }}>
-            <div style={{ paddingTop: "6rem" }}></div>
+        <div style={{ paddingLeft: "7%",paddingRight: "7%",paddingTop: "4.5rem", }}>
+            <div style={{ paddingTop: "10px" }}></div>
+            <div style={{ padding: "20px", textAlign:"center", fontSize:"0.8rem",color:"rgba(0,50,0,0.6)" }} sx="6" >
+            <span className="titl">Courses</span><br/>
+            Every course on this site has undergone a quality check conducted by musicians all over the country and aboad. We evaluate our courses thoroughly to ensure that we serve you with the best.</div>
             <Grid container spacing={4} sx="12">
             <Grid item xs={12} sm="6" md ="4" lg="3">
             <Link to="/basicmusiccourse" style={{textDecoration:"none"}}>
@@ -30,7 +33,7 @@ const CourseListPage = () => {
                         />
                         <CardContent>
                             <Typography gutterBottom variant="h5" component="div">
-                                Basic Music Theory
+                                Basic Music Theory 1
                             </Typography>
                             <Typography variant="body2" color="text.secondary">
                                 This course provides vital knowledge needed by every beginner and intermediate musician to kick start their music journey.
@@ -192,7 +195,7 @@ const CourseListPage = () => {
                         />
                         <CardContent>
                             <Typography gutterBottom variant="h5" component="div">
-                                Basic Music Theory
+                                Basic Music Theory 2
                             </Typography>
                             <Typography variant="body2" color="text.secondary">
                                 This course provides vital knowledge needed by every beginner and intermediate musician to kick start their music journey.

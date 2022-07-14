@@ -7,6 +7,12 @@
     border: 1px solid rgba(0, 128, 0, 0.618);
     border-radius: 5px;
 }
+.course-title-section {
+    padding-top:75px;
+    padding-left:10%;
+    font-size:3rem;
+    color:rgba(1, 39, 1, 0.659);
+}
 .mobl {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -77,6 +83,8 @@
         padding-right: 1%;
         border-radius: 5px;
         width: 97%;
+        flex-direction:row;
+        justify-content:space-between;
     }.tab-section:hover {
         background-color: rgba(255, 255, 255, 0.548);
     }
@@ -88,9 +96,27 @@
     .course-material {
         width: 100%;
     }
+}@media only screen and (max-width: 554px) {
+    .course-title-section {
+        padding-top:70px;
+        padding-left:0%;
+        text-align: center;
+        /* background-color: green; */
+        font-size:2rem;
+        color:rgba(1, 39, 1, 0.659);
+    }
 }@media only screen and (max-width: 424px) {
     .course-section {
         font-size: 0.8rem;
+    }
+    .course-title-section {
+        padding-top:60px;
+        padding-left:0%;
+        text-align: center;
+        background-color: rgba(100, 128, 0, 0.079);
+        font-size:1.5rem;
+        font-weight: 900;
+        color:rgba(1, 39, 1, 0.497);
     }
 }
 .extra-link {

@@ -47,7 +47,7 @@ const Course = () => {
     }
     return (
         <>
-        <div style={{paddingTop:"7%", paddingLeft:"10%", fontSize:"3rem"}}>
+        <div  className="course-title-section">
             <b>Basic Music Theory</b>
         </div>
         <div className="course-section">
@@ -72,7 +72,7 @@ const Course = () => {
                 <div className='testing'></div>
             </div>
             <div className="course-material">
-            <div className="topic-section"><span className='tab-section' onClick={showTab}>tab</span>
+            <div className="topic-section"><span className='tab-section' onClick={showTab} >tab<i class="fa-solid fa-angle-down" style={{marginTop:"6px",marginRight:"0%"}}></i></span>
             <div className=" mobl">
             <div className="course-module" onClick={(e)=>{setTop("Getting Started");displayModule(".strt-section")}}>Getting started</div>
                 <div className="course-module" onClick={()=>{setTop("Introduction");displayModule(".introduction-section")}}>Introduction</div>
